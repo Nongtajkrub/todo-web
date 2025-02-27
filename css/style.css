@@ -1,0 +1,38 @@
+body {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+	height: 500px;
+	width: 1000px;
+	max-width: 94vw;
+	background-color: #555;
+
+	border-radius: 20px;
+
+	display: flex;
+}
+
+.container .category-container {
+	border-radius: 20px 0px 0px 20px;
+
+	background-color: red;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.container .category-container .category-list-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.container .task-list-container {
+	margin-left: 50px;
+}
+
+.container .task-list-container .task-list-header-container {
+	display: flex;
+	gap: 30px;
+}
