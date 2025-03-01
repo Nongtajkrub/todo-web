@@ -4,7 +4,7 @@ interface Task {
 }
 
 interface Category {
-	element: HTMLButtonElement;
+	element: HTMLHeadElement;
 	tasks: Array<Task>;
 }
 
@@ -34,7 +34,7 @@ function addCategory(name: string): void {
 	}
 
 	categories.push({
-		element: document.createElement("button"),
+		element: document.createElement("h4"),
 		tasks: []
 	});
 
@@ -73,7 +73,7 @@ function addTaskToCategory(category: Category, name: string, state?: boolean): v
 }
 
 addCategoryButton.addEventListener("click", () => {
-	if (categoryNameInput.value === null) {
+	if (categoryNameInput.value.trim() === "") {
 		return;
 	}
 
