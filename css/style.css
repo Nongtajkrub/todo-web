@@ -40,7 +40,7 @@ h1 {
 .container .task-list-container input,
 .container .category-container button,
 .container .task-list-container button,
-.container .category-container h4 {
+h4 {
 	border-radius: 10px;
 	border: none;
 	background-color: #D3D9D4;
@@ -51,7 +51,6 @@ h1 {
 .container .task-list-container input {
 	padding: 15px 10px;
 	font-size: 15px;
-	transition: all 0.4s ease;
 	margin-bottom: 10px;
 }
 
@@ -66,7 +65,7 @@ h1 {
 
 .container .category-container button:hover,
 .container .task-list-container button:hover,
-.container .category-container h4:hover {
+h4:hover {
 	background-color: #124E66;
 }
 
@@ -75,12 +74,13 @@ h1 {
 	outline: none;
 }
 
-.container .category-container h4 {
+h4 {
 	padding: 10px 10px;
 	border-radius: 10px;
 	margin-top: 10px;
 	margin-bottom: 0px;
 	padding: 15px 10px;
+	transition: all 0.2s ease;
 }
 
 .container .category-container .category-list-container {
