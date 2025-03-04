@@ -1,6 +1,6 @@
 interface Task {
 	state: boolean;
-	element: HTMLParagraphElement;
+	element: HTMLHeadElement;
 }
 
 interface Category {
@@ -63,11 +63,15 @@ function addTaskToCategory(category: Category, name: string, state?: boolean): v
 
 	category.tasks.push({
 		state: (state) ? state : false,
-		element: document.createElement("p")
+		element: document.createElement("h4")
 	});
 
-	const element: HTMLParagraphElement = category.tasks.at(-1)!.element;
+	const element: HTMLHeadElement = category.tasks.at(-1)!.element;
 	element.textContent = name;
+
+	element.addEventListener("click", () => {
+		element.remove();
+	});
 
 	tasksContainer.appendChild(element);
 }
