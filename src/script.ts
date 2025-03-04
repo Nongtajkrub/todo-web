@@ -78,6 +78,8 @@ addCategoryButton.addEventListener("click", () => {
 	}
 
 	addCategory(categoryNameInput.value);
+
+	categoryNameInput.value = "";
 });
 
 addTaskButton.addEventListener("click", () => {
@@ -92,4 +94,6 @@ addTaskButton.addEventListener("click", () => {
 	}
 
 	addTaskToCategory(categories[categoryIndex], taskNameInput.value);
+
+	taskNameInput.value = "";
 });
