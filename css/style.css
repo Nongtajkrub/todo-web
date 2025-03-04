@@ -89,5 +89,6 @@ h4 {
 }
 
 .container .task-list-container {
+	width: 430px;
 	margin-left: 50px;
 }
