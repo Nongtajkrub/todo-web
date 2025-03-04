@@ -91,8 +91,3 @@ h4 {
 .container .task-list-container {
 	margin-left: 50px;
 }
-
-.container .task-list-container .task-list-header-container {
-	display: flex;
-	gap: 30px;
-}
