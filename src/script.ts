@@ -72,8 +72,7 @@ function addTaskToCategory(category: Category, name: string, state?: boolean): v
 	element.addEventListener("click", () => {
 		element.remove();
 
-		const task_index: number =
-			category.tasks.findIndex((task) => task.element.textContent === name);
+		const task_index: number = getTaskIndexByName(category, name);
 
 		category.tasks.splice(task_index , 1);
 	});
