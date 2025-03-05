@@ -30,6 +30,7 @@ function getTaskIndexByName(category: Category, name: string): number {
 
 function addCategory(name: string): void {
 	if (getCategoryIndexByName(name) !== -1) {
+		alert("That category already exist!");
 		return;
 	}
 
@@ -58,6 +59,7 @@ function addCategory(name: string): void {
 
 function addTaskToCategory(category: Category, name: string, state?: boolean): void {
 	if (getTaskIndexByName(category, name) !== -1) {
+		alert("That task already exist!");
 		return;
 	}
 
