@@ -88,7 +88,7 @@ addCategoryButton.addEventListener("click", () => {
 });
 
 addTaskButton.addEventListener("click", () => {
-	if (taskNameInput.value === null) {
+	if (taskNameInput.value.trim() === "") {
 		return;
 	}
 
